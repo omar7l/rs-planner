@@ -1,7 +1,7 @@
 {
     "calendar": "კალენდარი",
     "webhooks": "ვებჰუქები",
-    "webhooks_are_a_way_to_get_notified_when_something_happens_in_postiz_via_an_http_request": "ვებჰუქები საშუალებას გაძლევთ მიიღოთ შეტყობინება, როცა Postiz-ში რაიმე ხდება HTTP მოთხოვნის მეშვეობით.",
+    "webhooks_are_a_way_to_get_notified_when_something_happens_in_postiz_via_an_http_request": "ვებჰუქები საშუალებას გაძლევთ მიიღოთ შეტყობინება, როცა Planner RS-ში რაიმე ხდება HTTP მოთხოვნის მეშვეობით.",
     "name": "სახელი",
     "url": "ბმული",
     "edit": "რედაქტირება",
@@ -37,7 +37,7 @@
     "connect": "დაკავშირება",
     "public_api": "საჯარო API",
     "check_n8n": "იხილეთ ჩვენი N8N მორგებული node Postiz-ისთვის.",
-    "use_postiz_api_to_integrate_with_your_tools": "გამოიყენეთ Postiz API თქვენი ინსტრუმენტების ინტეგრაციისთვის.",
+    "use_postiz_api_to_integrate_with_your_tools": "გამოიყენეთ Planner RS API თქვენი ინსტრუმენტების ინტეგრაციისთვის.",
     "read_how_to_use_it_over_the_documentation": "იხილეთ დეტალები დოკუმენტაციაში.",
     "reveal": "ჩვენება",
     "copy_key": "გასაღების კოპირება",
