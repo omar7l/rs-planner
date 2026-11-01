@@ -4,7 +4,6 @@ export const dynamic = 'force-dynamic';
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import loadDynamic from 'next/dynamic';
-import { TestimonialComponent } from '@gitroom/frontend/components/auth/testimonial.component';
 import { LogoTextComponent } from '@gitroom/frontend/components/ui/logo-text.component';
 const ReturnUrlComponent = loadDynamic(() => import('./return.url.component'));
 export default async function AuthLayout({
@@ -37,12 +36,12 @@ export default async function AuthLayout({
       </div>
       <div className="text-[36px] flex-1 pt-[88px] hidden lg:flex flex-col items-center">
         <div className="text-center">
-          Over <span className="text-[42px] text-[#FC69FF]">20,000+</span>{' '}
-          Entrepreneurs use
+          Planner RS
           <br />
-          Postiz To Grow Their Social Presence
+          <span className="text-[24px] text-white/70">
+            Plan and publish your social media from one place.
+          </span>
         </div>
-        <TestimonialComponent />
       </div>
     </div>
   );
