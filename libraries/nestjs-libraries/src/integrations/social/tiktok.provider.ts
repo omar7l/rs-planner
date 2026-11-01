@@ -598,15 +598,6 @@ export class TiktokProvider extends SocialAbstract implements SocialProvider {
     const method = this.contentPostingMethod(firstPost);
 
     if (method === 'DIRECT_POST') {
-      // No default: TikTok must receive the visibility the user chose.
-      if (!firstPost.settings.privacy_level) {
-        throw new BadBody(
-          'tiktok',
-          '',
-          '',
-          'Choose who can see this video before posting.'
-        );
-      }
       // TikTok rejects branded content set to private.
       if (
         this.assetBoolean(firstPost.settings.brand_content_toggle) &&
