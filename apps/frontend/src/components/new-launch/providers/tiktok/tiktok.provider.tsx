@@ -400,7 +400,7 @@ const TikTokSettings: FC<{
               variant="hollow"
               disabled={isUploadMode}
               {...register('comment', {
-                value: false,
+                value: true,
               })}
             />
           </div>
