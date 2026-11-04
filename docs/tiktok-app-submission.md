@@ -14,7 +14,7 @@ video.list: find the account's videos for analytics and to match inbox drafts.
 video.upload: upload the selected video as an inbox draft.
 video.publish: publish the reviewed video after the user confirms.
 
-Changes: removed unused user.info.profile scope. Direct post now needs an explicit privacy choice, has comments on by default (the user can untick them) and shows the consent line.
+Changes: removed unused user.info.profile scope. Direct post now needs an explicit privacy choice, has comments, duet and stitch off by default (the user ticks them on) and shows the consent line.
 ```
 
 ## Public URLs
