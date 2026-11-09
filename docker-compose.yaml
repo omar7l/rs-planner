@@ -26,6 +26,7 @@ services:
 
       TIKTOK_CLIENT_ID: "${TIKTOK_CLIENT_ID}"
       TIKTOK_CLIENT_SECRET: "${TIKTOK_CLIENT_SECRET}"
+      HIDDEN_PROVIDERS: "tiktok-business"
 
       # Auth
       JWT_SECRET: "${JWT_SECRET}"
