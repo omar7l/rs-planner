@@ -82,9 +82,10 @@ describe('TikTok direct post settings', () => {
 });
 
 describe('TikTok sign-in scopes', () => {
+  // user.info.profile is needed for the username read on connect and refresh.
   it('requests only the scopes the planner reads or writes', () => {
     expect([...new TiktokProvider().scopes].sort()).toEqual(
-      ['user.info.basic', 'user.info.stats', 'video.list', 'video.publish', 'video.upload']
+      ['user.info.basic', 'user.info.profile', 'user.info.stats', 'video.list', 'video.publish', 'video.upload']
     );
   });
 });
