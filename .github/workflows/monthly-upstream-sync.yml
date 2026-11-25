@@ -48,7 +48,12 @@ jobs:
             git checkout -B "$branch" FETCH_HEAD
           else
             git checkout -b "$branch" origin/main
-            git merge --no-edit upstream/main
+            git merge --no-ff --no-commit upstream/main
+            # GITHUB_TOKEN may not push changes to workflow files, and upstream's
+            # CI/deploy workflows do not apply to this fork: keep ours as they are.
+            git rm -r -q -f --ignore-unmatch .github/workflows
+            git checkout origin/main -- .github/workflows
+            git commit --no-edit
             git push origin "HEAD:refs/heads/$branch"
           fi
           cat > /tmp/upstream-sync-body.md <<'BODY'
