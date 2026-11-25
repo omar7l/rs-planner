@@ -585,6 +585,8 @@ export class OrganizationRepository {
       },
       select: {
         users: {
+          // deleted accounts keep their membership rows, but must not get mail
+          where: { user: { deletedAt: null } },
           select: {
             user: {
               select: {
