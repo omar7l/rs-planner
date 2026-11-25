@@ -356,7 +356,7 @@ export const AllTeamsComponent = () => {
       {visible.map((team) => (
         <section
           key={team.id}
-          className="rounded-[8px] border border-newTableBorder bg-newBgColorInner overflow-hidden"
+          className="rounded-[8px] border border-newTableBorder bg-newBgColorInner"
         >
           <header className="flex items-center gap-[12px] px-[16px] py-[12px] border-b border-newTableBorder">
             <div className="flex-1 min-w-0">
